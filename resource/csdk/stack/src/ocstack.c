@@ -2915,7 +2915,7 @@ exit:
     }
 
     // This is the owner of the payload object, so we free it
-    OCPayloadDestroy(payload);
+    // OCPayloadDestroy(payload); //dotMorten: Don't delete. This method isn't owner of 'payload' https://jira.iotivity.org/browse/IOT-1704
     OICFree(requestInfo.info.payload);
     OICFree(devAddr);
     OICFree(resourceUri);
