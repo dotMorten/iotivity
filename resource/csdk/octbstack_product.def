@@ -41,6 +41,7 @@ OCDiscoveryEndpointDestroy
 OCDiscoveryPayloadCreate
 OCDiscoveryPayloadDestroy
 OCDiscoveryPayloadGetResourceCount
+OCDiscoveryPayloadGetResource
 OCDoDirectPairing
 OCDoResource
 OCDoResponse
@@ -86,6 +87,14 @@ OCRepPayloadSetByteStringArrayAsOwner
 OCRepPayloadGetPropBool
 OCRepPayloadGetPropByteString
 OCRepPayloadGetPropInt
+OCRepPayloadGetPropDouble
+OCRepPayloadGetPropString
+OCRepPayloadGetPropObject
+OCRepPayloadGetIntArray
+OCRepPayloadGetDoubleArray
+OCRepPayloadGetStringArray
+OCRepPayloadGetBoolArray
+OCRepPayloadGetPropObjectArray
 OCRepPayloadSetBoolArray
 OCRepPayloadSetBoolArrayAsOwner
 OCRepPayloadSetByteStringArray
