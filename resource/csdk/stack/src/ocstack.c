@@ -1516,7 +1516,7 @@ void OCHandleResponse(const CAEndpoint_t* endPoint, const CAResponseInfo_t* resp
                         CA_MSG_ACKNOWLEDGE, 0, NULL, NULL, 0, NULL, CA_RESPONSE_FOR_RES);
             }
 
-            OCPayloadDestroy(response.payload);
+            // OCPayloadDestroy(response.payload);  //dotMorten: Don't delete. This method is handing over ownership of 'payload' https://jira.iotivity.org/browse/IOT-1704
         }
         return;
     }
